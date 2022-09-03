@@ -5,7 +5,7 @@
   "main": "dist/src/app.js",
   "scripts": {
     "dev": "nodemon",
-    "prod": "node -r ts-node/register/transpile-only -r tsconfig-paths/register ./dist/src/app.js",
+    "prod": "node ./dist/src/app.js",
     "build": "rm -rf ./dist && tsc -p tsconfig.prod.json",
     "start": "npm run prod",
     "test": "echo \"Error: no test specified\" && exit 1"
