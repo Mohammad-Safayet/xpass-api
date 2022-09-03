@@ -8,6 +8,7 @@
     "prod": "node ./dist/src/app.js",
     "build": "rm -rf ./dist && tsc -p tsconfig.prod.json",
     "start": "npm run build && npm run prod",
+    "postinstall": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Mohammad Safayet Latif",
