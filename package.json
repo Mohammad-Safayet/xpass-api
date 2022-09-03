@@ -7,7 +7,7 @@
     "dev": "nodemon",
     "prod": "node ./dist/src/app.js",
     "build": "rm -rf ./dist && tsc -p tsconfig.prod.json",
-    "start": "npm run prod",
+    "start": "npm run build && npm run prod",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Mohammad Safayet Latif",
