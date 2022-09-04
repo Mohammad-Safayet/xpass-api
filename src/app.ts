@@ -26,14 +26,14 @@ if (ENV === 'production') {
         console.log(`HTTPS Server running on port ${PORT}`);
     });
 
-    http
-        .createServer(function fn (req, res) {
-            res.writeHead(301, {
-                Location: `https://${req.headers.host}${req.url}`,
-            });
-            res.end();
-        })
-        .listen(PORT);
+    // http
+    //     .createServer(function fn (req, res) {
+    //         res.writeHead(301, {
+    //             Location: `https://${req.headers.host}${req.url}`,
+    //         });
+    //         res.end();
+    //     })
+    //     .listen(PORT);
 } else if (ENV === 'development') {
     console.log(`http dev server running on port ${PORT}`);
     
