@@ -5,7 +5,7 @@ import fs from 'fs';
 import path from 'path';
 import { Sequelize, DataTypes } from 'sequelize';
 
-import { ENV } from '@config/config';
+import { ENV } from '../../config/config';
 
 const env = ENV;
 const basename = path.basename(__filename);

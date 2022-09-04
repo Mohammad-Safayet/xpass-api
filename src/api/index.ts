@@ -1,10 +1,10 @@
 import express, { Application } from 'express';
 import compression from 'compression';
 
-import routes from '@src/api/routes';
-import db from '@src/api/models';
-import { logger } from '@src/api/middlewares/logger'
-import { ENV } from '@config/config';
+import routes from './routes';
+import db from './models';
+import { logger } from './middlewares/logger'
+import { ENV } from '../config/config';
 
 export function expressApp () {
     db.sequelize
