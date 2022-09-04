@@ -5,6 +5,7 @@
   "main": "dist/src/app.js",
   "scripts": {
     "dev": "nodemon",
+    "tsc": "./node_modules/typescript/bin/tsc",
     "prod": "node ./dist/src/app.js",
     "build": "rm -rf ./dist && tsc -p tsconfig.prod.json",
     "start": "npm run build && npm run prod",
