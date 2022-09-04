@@ -33,7 +33,7 @@ if (ENV === 'production') {
             });
             res.end();
         })
-        .listen(80);
+        .listen(PORT);
 } else if (ENV === 'development') {
     console.log(`http dev server running on port ${PORT}`);
     
