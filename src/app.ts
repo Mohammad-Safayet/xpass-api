@@ -1,7 +1,7 @@
 import http from 'http';
 
-import { expressApp } from '@src/api';
-import { PORT, ENV } from '@config/config';
+import { expressApp } from './api';
+import { PORT, ENV } from './config/config';
 
 if (ENV === 'production') {
     // const privateKey = fs.readFileSync(
