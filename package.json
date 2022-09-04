@@ -6,9 +6,9 @@
   "scripts": {
     "dev": "nodemon",
     "tsc": "./node_modules/typescript/bin/tsc",
-    "prod": "node ./dist/src/app.js",
+    "prod": "npm run build && npm run prod",
     "build": "rm -rf ./dist && tsc -p tsconfig.prod.json",
-    "start": "npm run build && npm run prod",
+    "start": "node ./dist/src/app.js",
     "postinstall": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
